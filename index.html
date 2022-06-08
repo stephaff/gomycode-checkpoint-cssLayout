@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <nav id="navigation-principale">
@@ -25,36 +19,36 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    <a href="#"><img src="images/icon-cart.svg" alt="cart"></a>
-    <a href="#"><img src="images/image-avatar.png" alt="avatar" width="50" height="50"></a>
+    <a href="#"><img src="images/icon-cart.svg" alt="cart" class="panier"></a>
+    <a href="#"><img src="images/image-avatar.png" alt="avatar" width="50" height="50" class="avatar"></a>
   </nav>
   <section>
-    <aside>
-      <img src="images/image-product-1.jpg" alt="product-1" class="vue-normale">
-      <img src="images/image-product-1.jpg" alt="product-2" class="miniature">
-      <img src="images/image-product-2.jpg" alt="product-3" class="miniature">
-      <img src="images/image-product-3.jpg" alt="product-1" class="miniature">
-      <img src="images/image-product-4.jpg" alt="product-4" class="miniature">
+    <aside id="affichage">
+      <a href="#"><img src="images/image-product-1.jpg" alt="product-1" class="vue-normale"></a>
+      <a href="#"><img src="images/image-product-1.jpg" alt="product-2" class="miniature"></a>
+      <a href="#"><img src="images/image-product-2.jpg" alt="product-3" class="miniature"></a>
+      <a href="#"><img src="images/image-product-3.jpg" alt="product-1" class="miniature"></a>
+      <a href="#"><img src="images/image-product-4.jpg" alt="product-4" class="miniature"></a>
     </aside>
-    <aside>
-      <span id="sneaker-company">Sneaker Company</span>
+    <aside id="info">
+      <span id="sneaker-company">SNEAKER COMPANY</span>
       <h1>Fall Limited Edition Sneakers</h1>
       <p>
         These low-profile sneakers are your perfect casual wear companion. Featuring a 
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-      <p>
-        $125.00 <span>50%</span>
+      <p class="prix-actuel">
+        $125.00 <span class="remise">50%</span>
       </p>
-      <p>$250.00</p>
-      <div>
-        <div>
+      <p class="prix">$250.00</p>
+      <div class="achat">
+        <div class="commander">
           <button><img src="images/icon-minus.svg" alt="minus"></button>
-          <span>0</span>
-          <button><img src="images/icon-minus.svg" alt="plus"></button>
+          <span class="nombre-articles">0</span>
+          <button><img src="images/icon-plus.svg" alt="plus"></button>
         </div>
         <div>
-          <button>Add to cart</button>
+          <button class="bouton-valider"><img src="images/icon-cart.svg" alt="cart" class="panier">Add to cart</button>
         </div>
       </div>
     </aside>
