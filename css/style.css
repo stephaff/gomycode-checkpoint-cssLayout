@@ -28,6 +28,7 @@ body{
 .icon-menu{
     margin-right: 10px;
     display: none;
+    cursor: pointer;
 }
 .avatar{
     margin-left: 40px;
